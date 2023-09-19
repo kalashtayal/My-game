@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(36, 34, 34);
+    font-family: 'Croissant One', cursive;
+}
+nav{
+    background-color: tomato;
+    color: rgb(36, 34, 34);
+    height: 80px;
+    font-size: 35px;
+    font-weight: 800;
+    display: flex ;
+    align-items: center;
+    padding-left: 12px;
+    padding-top: 2px;
+}
+nav ul li{
+    background-color: tomato;
+}
+.gameInfo{
+    color: rgb(240, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.gameContainer{
+    margin: 5vw;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    
+    }
+    .container{
+        display: grid;
+        grid-template-rows: repeat(3,10vw) ;
+        grid-template-columns: repeat(3,10vw);
+    
+    
+    }
+    .box{
+        
+        border: 2px solid tomato;
+        font-size: 6vw;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .img-box img{
+        /* display: none; */
+        width: 0;
+        transition: width 1s ease-in-out;
+    }
+    .box{
+        background-color:rgb(240, 235, 235) ;
+    }
+    .boxtext{
+        background-color: transparent;
+    }
+    
+    .box:hover{
+        background-color:tomato;
+       
+    }
+    
+    #resat{
+        font-size: 3VW;
+    }
+    .info{
+        font-size: 30px;
+        display: block;
+        padding:10px;
+        background-color: rgb(240, 235, 235);
+        margin: 10px;
+        border-radius: 20px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        color:rgb(36, 34, 34) ;
+    }
+
+    .reset{
+        padding:10px;
+        margin:10px;
+        background-color:rgb(240, 235, 235);
+        color: rgb(36, 34, 34);
+        font-size: 30px;
+        width:200px;
+      
+    }
+    button{
+        border-radius: 20px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 980px) {
+        body {
+          background-color: rgb(36, 34, 34);
+          margin: auto;
+        }
+        .gameContainer{
+            flex-direction: column;
+        }
+        .gameInfo{
+            font-size: 15px;
+            width:500px;
+            margin:auto;
+        }
+        .container{
+            margin: auto;
+        }
+        .info{
+            margin:30px auto;
+            
+        }
+      }
